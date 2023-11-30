@@ -14,3 +14,6 @@ recursive call considers.
 Analyse the time complexity of your implementation and give a $\Theta$ bound for
 its worst-case runtime. Add your answer, including your reasoning, to this
 markdown file.
+
+## Answer
+The worst-case would be if each partition of the array are of length 1. This means that we have to partition the array $n$ times, and the chosen pivot would then be either the first or last element, meaning that number of times we compare each partition with this pivot for sorting would be at least $n-1$ times, making the worst-case runtime be $\Theta (n^2)$
